@@ -1,0 +1,34 @@
+Algorithm String_methods
+
+Var 
+    Vch,ch := String;
+    i,Nwords,Nvoy := Integer;
+
+BEGIN
+
+    READ(ch)
+
+    Nwords := 0
+    Nvoy := 0
+    Vch := "aeyoui"
+
+    FOR i FROM 0 TO (ch.length -1) STEP step  DO 
+
+    IF ( Find(ch[i],Vch) != -1  ) THEN
+
+        Nvoy := Nvoy + 1 ;
+
+    END_IF
+    IF ( ch[i] == " "  ) THEN
+
+        Nwords := Nwords + 1 ;
+
+    END_IF
+
+    END_FOR
+
+    Write("String Number of words :", Nwords)
+    Write("String Number of vowels :",Nvoy)
+    Write(Nwords"String length :", ch.length)
+
+END
